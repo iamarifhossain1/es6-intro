@@ -1,7 +1,11 @@
 const getMax = (amount, taxRate) => (amount * taxRate) / 100;
+const getMaxResult = getMax(50, 20);
+// console.log(getMaxResult);
+
 const add = (p, q) => p + q;
 
 const tax = getMax(100, 2);
+console.log(tax);
 
 // single parameter
 
@@ -21,4 +25,4 @@ console.log(logIt());
 
 // })
 
-document.getElementById("btn-click").addEventListener("click", (event) => {});
+// document.getElementById("btn-click").addEventListener("click", (event) => {});
