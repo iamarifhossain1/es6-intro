@@ -15,5 +15,5 @@ Object.freeze(person);
 person.salary = person.salary + 5000;
 person.location = "Dhaka";
 delete person.experience;
-// delete person.salary;
+delete person.salary;
 console.log(person);
