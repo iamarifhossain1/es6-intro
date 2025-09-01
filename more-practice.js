@@ -7,11 +7,10 @@
  * Template string ব্যবহার করো।
  */
 
-const name = "Arif";
+const name = "Arif Hossain";
 const age = 28;
-const string = `Hello, my name is ${name} and i am ${age} years old. `;
-
-console.log(string);
+const result = `Hello, my name is ${name} and i am ${age} years old`;
+console.log(result);
 
 /**
  * 2. Arrow Function দিয়ে একটি sum ফাংশন বানাও
@@ -20,8 +19,17 @@ console.log(string);
  */
 
 const addition = (num1, num2) => num1 + num2;
-console.log(addition(35, 39));
+console.log(addition(15, 85));
 
+/**
+ * একটি ফাংশন বানাও যেটি নাম নিবে, default হবে "Guest".
+ * যদি কোনো নাম না দেওয়া হয়, আউটপুট হবে:
+ * Hello, Guest!
+ */
 
-const greet(name = "Hello");
-console.log(greet(`Hello`, $name(greet)!));
+function greet(name = "Guest") {
+  console.log(`Hello, ${name}!`);
+}
+
+guest();
+guest("Arif Hossain");
