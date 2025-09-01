@@ -85,3 +85,29 @@ const anotherArif = {
 Object.seal(anotherArif);
 anotherArif.Location = "Cumilla";
 console.log(anotherArif);
+
+/**
+ * for...in এবং Object.entries() ব্যবহার করো
+ * একটি object এর সব key এবং value loop করে প্রিন্ট করো।
+ * দুইভাবে করো: for...in এবং Object.entries()।
+ */
+
+const superMan = {
+  name: "SuperMan",
+  age: "Unknown",
+  planet: "Krypton",
+  strength: "High",
+  weakness: "Kryptonite",
+};
+
+for (const key in superMan) {
+  const superManValue = superMan[key];
+  console.log(key, superManValue);
+}
+
+const keys = Object.keys(superMan);
+const values = Object.values(superMan);
+const entries = Object.entries(superMan);
+console.log(keys);
+console.log(values);
+console.log(entries);
